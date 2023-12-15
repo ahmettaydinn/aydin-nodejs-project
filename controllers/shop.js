@@ -157,7 +157,7 @@ exports.getOrders = (req, res, next) => {
   //     path: "/orders",
   //   });
   // });
-  req.user.getOrders({ include: ["products"] }).then((orders) => {
+  req.user.getOrders().then((orders) => {
     res.render("shop/orders", {
       pageTitle: "Orders",
       path: "/orders",
